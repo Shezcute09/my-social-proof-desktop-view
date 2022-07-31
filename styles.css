@@ -219,7 +219,7 @@ p {
   }
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:420px) {
   body {
     background: url(/images/bg-pattern-top-mobile.svg) no-repeat,
       url(/images/bg-pattern-bottom-mobile.svg) no-repeat;
