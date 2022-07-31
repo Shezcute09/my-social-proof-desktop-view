@@ -19,21 +19,9 @@
 html,
 body {
   overflow-x: hidden;
-}
-
-.top-desktop {
-  position: absolute;
-  top: 0;
-}
-
-.bottom-desktop {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
-
-.top-mobile, .bottom-mobile {
-  display: none;
+  background: url(/images/bg-pattern-top-desktop.svg) no-repeat,
+    url(/images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-position: top left, bottom right;
 }
 
 main {
@@ -53,9 +41,7 @@ main {
 }
 
 .two {
-  /* width: 400px; */
-  /* max-width: 1440px; */
-  margin: 10px;
+   margin: 10px;
 }
 
 h2 {
@@ -161,13 +147,10 @@ p {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    /* padding: 20px; */
   }
 
   .one {
     text-align: center;
-    /* padding: 100px; */
-    /* margin: 10px; */
   }
 
   .two {
@@ -178,7 +161,6 @@ p {
   .star {
     width: 500px;
     border-radius: 3px;
-    /* padding: 20px 0; */
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -186,12 +168,11 @@ p {
   }
 
   .star2 {
-   margin: 20px auto;
+    margin: 20px auto;
   }
 
   .star3 {
     margin: auto;
-    
   }
 
   .iamtireP {
@@ -206,7 +187,6 @@ p {
     align-items: center;
     gap: 5px;
     flex-basis: 150px;
-    /* padding: 20px 60px 0 50px; */
   }
 
   .box2 {
@@ -240,16 +220,20 @@ p {
 }
 
 @media screen and (max-width: 375px) {
-  h2 {
-    font-size:2.5rem ;
+  body {
+    background: url(/images/bg-pattern-top-mobile.svg) no-repeat,
+      url(/images/bg-pattern-bottom-mobile.svg) no-repeat;
+    background-position: top left, bottom right;
   }
-.box1 {
-padding: 0 10px;
-}
 
-.star{
-  width: 333px;
-  
-}
+  h2 {
+    font-size: 2.5rem;
+  }
+  .box1 {
+    padding: 0 10px;
+  }
 
+  .star {
+    width: 333px;
+  }
 }
